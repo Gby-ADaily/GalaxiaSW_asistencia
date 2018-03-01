@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Asistencia</string>
+    <string name="formato_tiempo">hh:mm:ss a</string>
+</resources>

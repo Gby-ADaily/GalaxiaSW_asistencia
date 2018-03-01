@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.toshiba_glx.galaxiasw_asistencia.MainActivity">
+    <TextView
+        android:id="@+id/txtFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        android:text="fecha"
+        android:textSize="30sp"/>
+    <TextClock
+        android:id="@+id/tclTiempo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:format12Hour="@string/formato_tiempo"
+        android:text="tiempo"
+        android:textSize="60sp"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/txtEstadoAsistencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:text="Entrada Mañana"/>
+    <ImageButton
+        android:id="@+id/mgbRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_action_clock" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="3">
+        <ListView
+            android:id="@+id/lstRegistroHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"/>
+    </LinearLayout>
+</LinearLayout>
